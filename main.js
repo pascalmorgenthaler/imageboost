@@ -4,20 +4,21 @@ $( document ).ready(function() {
 		$(".burger-button").toggleClass("active");
 		$(".mobile-menu").toggleClass("active");
 	});
-
-
-	function passwd(){
-
-		var password = prompt('Enter the password to download the file:');
-		if(password.toLowerCase() == "teacher"){
-		  window.open("downloads/juli-2023.zip")    
-		}else{
-		  alert("incorrect password!! please try again");
-		}
-	  }
 	  
 
 });
+
+function passwd(){
+
+	var password = prompt('Enter the password to download the file:');
+	if(password.toLowerCase() == "teacher"){
+	  window.open("downloads/juli-2023.zip")    
+	}else{
+	  alert("incorrect password!! please try again");
+	}
+  }
+
+
 
 //  Image Lazy loading
 document.addEventListener("DOMContentLoaded", function() {

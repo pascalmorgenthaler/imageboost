@@ -203,7 +203,10 @@ h2 {
   font-weight: 600;;
 
 }
-h3 { font-size: 1.8rem; }
+h3 { 
+  font-size: 1.8rem;
+  font-weight: 500;
+ }
 h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1.2rem; }
@@ -213,7 +216,7 @@ p, li {
   margin-bottom: 1rem;
   font-family: 'Futura', sans-serif; 
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h2:last-child, 
@@ -300,6 +303,10 @@ p a:hover {
   position: relative;
   min-height: 60vh;
   text-align: center;
+}
+
+.abo {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 /* ------------ Header & Hamburger Menu -------------- */

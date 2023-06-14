@@ -182,6 +182,8 @@ a.bg-image { display: block;}
 body {
   font-family: 'futura-pt', sans-serif;  /* Add your font here */ 
   color: var(--dark-text);
+  -webkit-font-smoothing: subpixel-antialiased !important; 
+  text-rendering:optimizeLegibility !important;
 }
 
 h2, h3, h4, h5, h6 {
@@ -859,5 +861,7 @@ button {
     font-size: 1.3rem;
     display: block;
   }
+
+  .width { max-width: 7rem;}
 
 }

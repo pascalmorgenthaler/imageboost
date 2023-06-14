@@ -113,10 +113,12 @@ html {
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
-.bg-featured { background-color: var(--featured);}
+.bg-less-dark { background-color: var(--less-dark);}
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
+.bg-featured { background-color: var(--featured);}
+.bg-white { background-color: white;}
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -218,6 +220,9 @@ p, li {
   font-weight: 200;
   font-size: 1.2rem;
 }
+ul {
+  margin-left: 2rem;
+}
 
 h2:last-child, 
 h3:last-child, 
@@ -229,7 +234,7 @@ p:last-child {
 }
 
 /* Unique Typography Styles  */
-.emphasis       { font-size: 1.2rem; }
+.emphasis       { font-size: 1.2rem; font-weight: 500;}
 .text-featured  { color: var(--featured-text);}
 .text-light     { color: var(--light-text);}
 .subtle         { opacity: 0.8;     }
@@ -307,6 +312,7 @@ p a:hover {
 
 .abo {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: white;
 }
 
 /* ------------ Header & Hamburger Menu -------------- */
@@ -660,9 +666,83 @@ hr.short.center {
 /* ------------ Page Name  ----------------------- */
 
 
+#popup_box {
+  display: none; /* Hide the DIV */
+  position: fixed;
+  _position: absolute; /* hack for internet explorer 6 */
+  background: var(--featured);
+  color: white;
+  left: 400px;
+  top: 40%;
+  z-index: 100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+  margin-left: 25px;
+  /* additional features, can be omitted */
+  padding: 5%;
+  font-size: 15px;
+  -moz-box-shadow: 0 0 5px;
+  -webkit-box-shadow: 0 0 5px;
+  box-shadow: 0 0 5px;
+}
+#container {
+  background: white; /*Sample*/
+  width: 100%;
+  height: 100%;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+/* This is for the positioning of the Close Link */
+#popupBoxClose {
+  font-size: 20px;
+  line-height: 15px;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+  font-weight: 500;
+}
 
 
+button {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
 
+#overlay {
+  z-index: 1;
+  position: fixed;
+  height: 100%; 
+  width: 100%;
+  top: 0;
+  right: 0;  
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+}
+
+#popup {
+  max-width: 600px;
+  width: 80%;
+  max-height: 300px;
+  height: 80%; 
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  margin: 20px auto;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000;
+}
 
 
 

@@ -192,11 +192,16 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: 'ivypresto-display', serif;
+  font-family: 'heimat didone', serif;
   font-weight: 100;
-  font-size: 4.5rem;
-  margin-bottom: 1rem;;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -3px;
 }  
+
+.logo {
+  font-size: 4.5rem;
+}
 
 .fa-solid { font-size: 4rem;}
 
@@ -213,8 +218,9 @@ h3 {
  }
 h4 { 
   font-size: 1.6rem;
-  font-family: 'ivypresto-display', serif;
+  font-family: 'heimat didone', serif;
   font-weight: 100;
+  letter-spacing: -3px;
  }
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1.2rem; }
@@ -295,11 +301,7 @@ p a:hover {
 /* suggested additional styles 
 - .button-inverted, .button-subtle, .button-lg  */
 
-.menu-bar {
-  padding: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
+
 
 .menu-bar a {
   padding: 0.25rem 0.75rem;
@@ -326,6 +328,8 @@ p a:hover {
   text-align: center;
 }
 
+.nspacing { letter-spacing: 0px;}
+
 .abo {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: white;
@@ -336,6 +340,17 @@ header {
     padding: 1rem 5%;
 }
 
+.fat { 
+  font-weight: 600;
+}
+
+.angel {
+  position: absolute;
+  right: 8%;
+  bottom: -8rem;
+  max-width: 17rem;
+}
+
 nav a {
     padding: 0.25rem 0.5rem;
     display: inline-block;
@@ -343,6 +358,15 @@ nav a {
 }
 nav a:hover {
   color: var(--featured-text);
+}
+
+.nav-item-emphasis {
+  border: 1px solid var(--dark-text);
+  margin-left: 1.3rem;
+}
+
+.flex-flip:nth-child(2n) {
+  flex-flow:row-reverse wrap;
 }
 
 /* ------------ Footer Styles -------------- */
@@ -463,7 +487,7 @@ footer nav a {
 
 .burger-button span{
   width: 35px;
-  border: 2px solid var(--medium);
+  border: 2px solid var(--dark-text);
   background-color: white;
   display: block;
   transition: 0.5s;
@@ -471,7 +495,7 @@ footer nav a {
   margin-bottom: 10px;
 }
 .burger-button.active span{
-  border-color: var(--light);
+  border-color: var(--dark-text);
   background-color:white;
 }
 
@@ -538,24 +562,26 @@ footer nav a {
 }
 
 .mobile-menu {
-  background-color: var(--featured);
-  padding: 0 5% 5% 5%;
-  position: fixed; 
+  background-color: var(--light);
+  padding: 10rem;
+  padding-top: 10rem;
+  position: fixed;
   z-index: 1;
   top: 0;
   right: -100%;
   left: 100vw;
   bottom: 0;
   color: white;
-  text-align: left;
+  text-align: center;
   transition: 0.5s;
   max-height: 100vh;
   overflow: scroll;
+  padding-top: 3rem;
 }
 
 .mobile-menu.active {
   right: 0;
-  left: 20vw;
+  left: 0;
 }
 
 .logo-mobile-menu {
@@ -569,10 +595,10 @@ footer nav a {
 .mobile-menu a {
   font-family: 'Poiret One', sans-serif;
   display: block;
-  padding: 0.5rem 1rem;
-  font-size: 1.3rem;
-  color: var(--dark-text)
-} 
+  padding: 0.8rem 1rem;
+  font-size: 2.3rem;
+  color: var(--dark-text);
+}
 
 .mobile-nav {
   margin-top: 7rem;
@@ -783,8 +809,24 @@ button {
 
 @media(max-width:64em) {
 
+  .md-padded-1 { padding: 1rem; }
+
 	.show-md { display: block; }
 	.hide-md { display: none;  }
+
+  .angel {
+    position: absolute;
+    right: 8%;
+    bottom: -8rem;
+    max-width: 12rem;
+  }
+
+  .logo { font-size: 2.5rem; }
+
+  .menu-bar a {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.3rem;
+  }
 
 }
 
@@ -793,6 +835,10 @@ button {
 
 
 @media(max-width:48em) {
+
+  .nav-item-emphasis {
+    margin-left: 1.3rem;
+    }
 
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
@@ -823,6 +869,8 @@ button {
     font-size: 1.8rem;
     font-weight: 500;
   }
+
+  .logo-mob-menu { color: var(--dark-text); }
 
 }
 

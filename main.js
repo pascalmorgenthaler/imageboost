@@ -1,10 +1,9 @@
 $( document ).ready(function() {
 
-	$(".burger-button").click(function(){
-		$(".burger-button").toggleClass("active");
-		$(".mobile-menu").fadeToggle(100);
-		$("this").toggleClass('active');
-	});     
+	$('.burger-button').click(function(){
+		$('.mobile-menu').fadeToggle(400);
+		$(this).toggleClass('active');
+  });
 	  
 
 	$(".juli-zip").click(function() {

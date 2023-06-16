@@ -2,7 +2,8 @@ $( document ).ready(function() {
 
 	$(".burger-button").click(function(){
 		$(".burger-button").toggleClass("active");
-		$(".mobile-menu").toggleClass("active");
+		$(".mobile-menu").fadeToggle(100);
+		$("this").toggleClass('active');
 	});     
 	  
 

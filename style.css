@@ -564,8 +564,7 @@ footer nav a {
 .mobile-menu {
   transition: all 0.8s;
   background-color: var(--light);
-  padding: 10rem;
-  padding-top: 10rem;
+  padding: 2rem;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -578,7 +577,15 @@ footer nav a {
   max-height: 100vh;
   overflow: scroll;
   padding-top: 3rem;
-  display:none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.mobile-menu.active {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 4.5rem;
 }
 
 

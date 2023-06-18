@@ -20,6 +20,7 @@ section { position: relative; }
 html { 
   scroll-behavior: smooth ;
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  overflow-x: hidden;
 }
 
 #overflow { overflow: unset; }

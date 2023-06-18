@@ -590,6 +590,7 @@ footer nav a {
 }
 
 .mobile-menu.active {
+  transition: visibility 0s, opacity 0.5s linear;
   visibility: visible;
   opacity: 1;
   padding-top: 4.5rem;

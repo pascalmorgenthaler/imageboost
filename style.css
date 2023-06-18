@@ -23,7 +23,10 @@ html {
   overflow-x: hidden;
 }
 
-#overflow { overflow: unset; }
+#overflow { 
+  overflow: hidden; 
+  overflow-x: hidden;
+}
 
 
 /* ---------- Negative Space Utility Classes  ------------------ */ 

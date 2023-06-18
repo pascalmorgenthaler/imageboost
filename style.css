@@ -22,7 +22,7 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
-#overflow { overflow: auto;}
+#overflow { overflow: scroll; }
 
 
 /* ---------- Negative Space Utility Classes  ------------------ */ 
@@ -194,7 +194,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: 'heimat didone', serif;
+  font-family: 'heimat-didone-10', serif;
   font-weight: 100;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -220,7 +220,7 @@ h3 {
  }
 h4 { 
   font-size: 1.6rem;
-  font-family: 'heimat didone', serif;
+  font-family: 'heimat-didone-10', serif;
   font-weight: 100;
   letter-spacing: -3px;
  }
@@ -230,7 +230,7 @@ h6 { font-size: 1.2rem; }
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Futura', sans-serif; 
+  font-family: 'futura-pt', sans-serif; 
   font-weight: 100;
   font-size: 1.2rem;
 }

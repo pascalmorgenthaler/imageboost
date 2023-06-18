@@ -102,6 +102,8 @@ html {
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
 
+.margin-t-3 { margin-top: 3rem; }
+
 .margin-t-0 { margin-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
@@ -208,6 +210,13 @@ h1 {
 
 .logo {
   font-size: 4.5rem;
+}
+
+.mob-logo {
+  position: absolute;
+  left: 1rem;
+  top: 1rem; 
+  font-size: 2.5rem; ;
 }
 
 .fa-solid { font-size: 4rem;}
@@ -370,6 +379,10 @@ nav a:hover {
 .nav-item-emphasis {
   border: 1px solid var(--dark-text);
   margin-left: 1.3rem;
+}
+.nav-item-emphasis-mobile {
+  margin-top: 1rem;
+  border: 1px solid var(--dark-text);
 }
 
 .flex-flip:nth-child(2n) {
@@ -586,14 +599,13 @@ footer nav a {
   padding-top: 3rem;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .mobile-menu.active {
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
   visibility: visible;
   opacity: 1;
-  padding-top: 4.5rem;
 }
 
 
@@ -608,7 +620,7 @@ footer nav a {
 }
 
 .mobile-menu a {
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'heimat-didone-10', sans-serif;
   display: block;
   padding: 0.8rem 1rem;
   font-size: 2.3rem;
@@ -906,7 +918,10 @@ button {
     max-width: 8rem;
   }
 
-  .logo-mob-menu { color: var(--dark-text); }
+  .logo-mob-menu { 
+    color: var(--dark-text);
+    font-size: 2.5rem;
+   }
 
   .sm-padded-t-0 { padding-top: 0;}
 

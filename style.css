@@ -464,7 +464,7 @@ text-align: left;
 /* ------------ Burger Button / Mobile Menu Styles -------------- */
 
 .burger-button {
-position:fixed;
+position:absolute;
 top: 2vh;
 right: 4vh;
 z-index: 9;

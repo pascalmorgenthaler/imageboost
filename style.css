@@ -463,29 +463,8 @@ text-align: left;
 
 /* ------------ Burger Button / Mobile Menu Styles -------------- */
 
-.burger-button {
-position:absolute;
-top: 2vh;
-right: 4vh;
-z-index: 9;
-padding: 8px;
-margin-top: 0.8rem;
-line-height: 1.7;
-cursor: pointer;
 
-}
 
-.burger-button-index {
-position:fixed;
-top: 2vh;
-right: 2vh;
-z-index: 9;
-padding: 8px;
-margin-top: 0.6rem;
-line-height: 1.7;
-cursor: pointer;
-
-}
 /*this is where you can chand the color of the buttons*/
 
 .burger-button-index span{
@@ -603,7 +582,7 @@ text-align: center;
 
 
 .burger-button {
-  position:fixed;
+  position:absolute;
   top: 2vh;
   right: 2vh;
   z-index: 9;
@@ -614,17 +593,6 @@ text-align: center;
   
 }
 
-.burger-button-index {
-  position:fixed;
-  top: 2vh;
-  right: 2vh;
-  z-index: 9;
-  padding: 8px;
-  margin-top: 0.6rem;
-  line-height: 1.7;
-  cursor: pointer;
-  
-}
 /*this is where you can chand the color of the buttons*/
 
 .burger-button-index span{

@@ -579,11 +579,24 @@ color: var(--dark-text)
 }
 
 .mobile-menu {
-padding: 1rem;
-text-align: center;
-background-color: var(--featured);
-border-radius: 50rem 50rem 0 0;
-width: 10rem;
+  background-color: var(--v-light);
+  padding: 0 5% 5% 5%;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  right: -100%;
+  left: 100vw;
+  bottom: 0;
+  color: white;
+  text-align: left;
+  transition: 0.5s;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.mobile-menu.active {
+  right: 0;
+  left: 20vw;
 }
 
 .mobile-menu a {
@@ -593,7 +606,82 @@ padding: 0.2rem;
 }
 
 
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 4vh;
+  z-index: 9;
+  padding: 8px;
+  margin-top: 0.8rem;
+  line-height: 1.7;
+  cursor: pointer;
+  
+}
 
+.burger-button-index {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+  margin-top: 0.6rem;
+  line-height: 1.7;
+  cursor: pointer;
+  
+}
+/*this is where you can chand the color of the buttons*/
+
+.burger-button-index span{
+  width: 35px;
+  border: 2px solid var(--medium);
+  background-color: white;
+  display: block;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.burger-button-index.active span{
+  border-color: var(--light);
+  background-color:white;
+}
+
+.burger-button span{
+  width: 35px;
+  border: 2px solid var(--medium);
+  background-color: white;
+  display: block;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.burger-button.active span{
+  border-color: var(--light);
+  background-color:white;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
 
 
 .logo-mobile-menu {

@@ -4,11 +4,11 @@
 /* ----------- CSS RESET --------- */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-  
+
 img { max-width: 100%; height: auto; }
 
 /* Override default gridlex padding */ 
@@ -18,15 +18,15 @@ img { max-width: 100%; height: auto; }
 section { position: relative; }
 
 html { 
-  scroll-behavior: smooth ;
-  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-  overflow-x: hidden;
+scroll-behavior: smooth ;
+-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+overflow-x: hidden;
 }
 
 #overflow { 
-  overflow: hidden; 
-  overflow-x: hidden;
-  max-width: 100%;
+overflow: hidden; 
+overflow-x: hidden;
+max-width: 100%;
 }
 
 
@@ -102,6 +102,8 @@ html {
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
 
+.margin-t-3 { margin-top: 3rem; }
+
 .margin-t-0 { margin-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
@@ -128,38 +130,38 @@ html {
 .bg-white { background-color: white;}
 
 .bg-image {
-    background-color: var(--light); /* Set a fall-back color while images are loading */ 
-    background-image: url('/images/vanilla-mood.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
+  background-color: var(--light); /* Set a fall-back color while images are loading */ 
+  background-image: url('/images/vanilla-mood.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .bg-overlay::after {
-  z-index: 1;
-  content: ""; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
+z-index: 1;
+content: ""; 
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
 }
 
 
 .bg-overlay > * {
-  z-index: 2;
-  position: relative;
+z-index: 2;
+position: relative;
 }
 /* Add a second class to change the color or style  */
 
 .bg-overlay-gradient::after { 
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 } 
 
 .bg-overlay-featured::after { 
-  background-color: var(--featured);
-  opacity: 0.5;
+background-color: var(--featured);
+opacity: 0.5;
 } 
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
@@ -187,27 +189,34 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'futura-pt', sans-serif;  /* Add your font here */ 
-  color: var(--dark-text);
-  -webkit-font-smoothing: subpixel-antialiased !important; 
-  text-rendering:optimizeLegibility !important;
+font-family: 'futura-pt', sans-serif;  /* Add your font here */ 
+color: var(--dark-text);
+-webkit-font-smoothing: subpixel-antialiased !important; 
+text-rendering:optimizeLegibility !important;
 }
 
 h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  margin-bottom: 1.2rem;
+line-height: 1.1;
+margin-bottom: 1.2rem;
 }
 
 h1 {
-  font-family: 'heimat-didone-10', serif;
-  font-weight: 100;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  letter-spacing: -3px;
+font-family: 'heimat-didone-10', serif;
+font-weight: 100;
+font-size: 3rem;
+margin-bottom: 1rem;
+letter-spacing: -3px;
 }  
 
 .logo {
-  font-size: 4.5rem;
+font-size: 4.5rem;
+}
+
+.mob-logo {
+position: absolute;
+left: 1rem;
+top: 1rem; 
+font-size: 2.5rem; ;
 }
 
 .fa-solid { font-size: 4rem;}
@@ -215,32 +224,32 @@ h1 {
 /* 'orpheuspro' */
 
 h2 { 
-  font-size: 2rem; 
-  font-weight: 600;;
+font-size: 2rem; 
+font-weight: 600;;
 
 }
 h3 { 
-  font-size: 1.8rem;
-  font-weight: 500;
- }
+font-size: 1.8rem;
+font-weight: 500;
+}
 h4 { 
-  font-size: 1.6rem;
-  font-family: 'heimat-didone-10', serif;
-  font-weight: 100;
-  letter-spacing: -3px;
- }
+font-size: 1.6rem;
+font-family: 'heimat-didone-10', serif;
+font-weight: 100;
+letter-spacing: -3px;
+}
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1.2rem; }
 
 p, li {
-  line-height: 1.4; 
-  margin-bottom: 1rem;
-  font-family: 'futura-pt', sans-serif; 
-  font-weight: 100;
-  font-size: 1.2rem;
+line-height: 1.4; 
+margin-bottom: 1rem;
+font-family: 'futura-pt', sans-serif; 
+font-weight: 100;
+font-size: 1.2rem;
 }
 ul {
-  margin-left: 2rem;
+margin-left: 2rem;
 }
 
 h2:last-child, 
@@ -249,7 +258,7 @@ h4:last-child,
 h5:last-child, 
 h6:last-child, 
 p:last-child {
-	margin-bottom: 0;
+margin-bottom: 0;
 }
 
 /* Unique Typography Styles  */
@@ -272,37 +281,37 @@ p:last-child {
 
 /* ------------ Buttons & Links ------------ */
 a {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-  color: var(--featured-text); 
+color: var(--featured-text); 
 }
 
 p a {
-    text-decoration: none;
-    border-bottom: 1px solid;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 p a:hover { 
-  color: var(--featured-text); 
+color: var(--featured-text); 
 }
 
 .button { 
-    display: inline-block;
-    text-decoration: none;
-    line-height: 1;
-    padding: 0.5rem 1.5rem;
-    border: 1px solid;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid;
 }
 
 .button:hover {
-    color: var(--featured-text);
+  color: var(--featured-text);
 }
 
 .subtle-button {
-  text-decoration: none;
-  border-bottom: 1px solid;
+text-decoration: none;
+border-bottom: 1px solid;
 }
 
 /* suggested additional styles 
@@ -311,149 +320,143 @@ p a:hover {
 
 
 .menu-bar a {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.3rem;;
+padding: 0.25rem 0.75rem;
+font-size: 1.3rem;;
 }
 
 .banner {
-  padding: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("/images/coffee.jpg");
-  background-attachment: fixed;
-  background-color: #3d4149;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment:scroll;
-  color: white;
-  position: relative;
-  min-height: 60vh;
-  text-align: center;
+padding: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url("/images/coffee.jpg");
+background-attachment: fixed;
+background-color: #3d4149;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment:scroll;
+color: white;
+position: relative;
+min-height: 60vh;
+text-align: center;
 }
 
 .nspacing { letter-spacing: 0px;}
 
 .abo {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  background-color: white;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+background-color: white;
 }
 
 /* ------------ Header & Hamburger Menu -------------- */
 header {
-    padding: 1rem 5%;
+  padding: 1rem 5%;
 }
 
 .fat { 
-  font-weight: 600;
+font-weight: 600;
 }
 
 .angel {
-  position: absolute;
-  right: 8%;
-  bottom: -8rem;
-  max-width: 17rem;
+position: absolute;
+right: 8%;
+bottom: -8rem;
+max-width: 17rem;
 }
 
 nav a {
-    padding: 0.25rem 0.5rem;
-    display: inline-block;
-    text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  text-decoration: none;
 }
 nav a:hover {
-  color: var(--featured-text);
+color: var(--featured-text);
 }
 
 .nav-item-emphasis {
-  border: 1px solid var(--dark-text);
-  margin-left: 1.3rem;
-}
-
-
-.nav-item-emphasis-mobile {
-  margin-top: 1rem;
-  border: 1px solid var(--dark-text);
+border: 1px solid var(--dark-text);
+margin-left: 1.3rem;
 }
 
 
 .flex-flip:nth-child(2n) {
-  flex-flow:row-reverse wrap;
+flex-flow:row-reverse wrap;
 }
 
 /* ------------ Footer Styles -------------- */
 
 footer a {
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.2rem 0 0.2rem 0.2rem;
-  font-weight: 200;
+text-align: center;
+display: inline-block;
+text-decoration: none;
+padding: 0.2rem 0 0.2rem 0.2rem;
+font-weight: 200;
 }
 
 footer nav a {
-  text-align: right;
-  display: block;
-  text-decoration: none;
-  padding: 0.2rem 0 0.2rem 0.2rem;
-  text-transform: uppercase;
-  font-weight: 200;
+text-align: right;
+display: block;
+text-decoration: none;
+padding: 0.2rem 0 0.2rem 0.2rem;
+text-transform: uppercase;
+font-weight: 200;
 }
 
 .fa-brands {
-  text-align: center;
-  font-size: 1.6rem;
+text-align: center;
+font-size: 1.6rem;
 }
 
 
 .pajurama-logo {
-  width: 6rem;
-  border-bottom: none;
+width: 6rem;
+border-bottom: none;
 }
 
 
 /* Dropdown styles */
 
 .dropdown { 
-  position: relative; 
-  display: inline-block;
-  border: 1px solid orange;
+position: relative; 
+display: inline-block;
+border: 1px solid orange;
 }
 
 .dropdown-title {
-  padding: 0.25rem 0.5rem;
-  display: inline-block;
+padding: 0.25rem 0.5rem;
+display: inline-block;
 }
 
 .dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: -1rem;
-  padding: 0.5rem;
-  display:none; 
-  background-color: white;
-  z-index: 2;
-  text-align: left;
-  min-width: 10rem;
-  border: 1px solid mediumvioletred;
+position: absolute;
+top: 100%;
+left: -1rem;
+padding: 0.5rem;
+display:none; 
+background-color: white;
+z-index: 2;
+text-align: left;
+min-width: 10rem;
+border: 1px solid mediumvioletred;
 }
 
 .dropdown:hover .dropdown-content{ 
-  display: block;
+display: block;
 }
 
 .dropdown-content a {
-  display: block;
-  padding: 0.2rem;
+display: block;
+padding: 0.2rem;
 }
 
 .powered-by {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.7rem;
-  text-align: left;
+position: absolute;
+top: 0.5rem;
+left: 0.7rem;
+text-align: left;
 }
 
 .width { max-width: 10rem;}
@@ -461,280 +464,223 @@ footer nav a {
 /* ------------ Burger Button / Mobile Menu Styles -------------- */
 
 .burger-button {
-  position:fixed;
-  top: 2vh;
-  right: 4vh;
-  z-index: 9;
-  padding: 8px;
-  margin-top: 0.8rem;
-  line-height: 1.7;
-  cursor: pointer;
-  
+position:fixed;
+top: 2vh;
+right: 4vh;
+z-index: 9;
+padding: 8px;
+margin-top: 0.8rem;
+line-height: 1.7;
+cursor: pointer;
+
 }
 
 .burger-button-index {
-  position:fixed;
-  top: 2vh;
-  right: 2vh;
-  z-index: 9;
-  padding: 8px;
-  margin-top: 0.6rem;
-  line-height: 1.7;
-  cursor: pointer;
-  
+position:fixed;
+top: 2vh;
+right: 2vh;
+z-index: 9;
+padding: 8px;
+margin-top: 0.6rem;
+line-height: 1.7;
+cursor: pointer;
+
 }
 /*this is where you can chand the color of the buttons*/
 
 .burger-button-index span{
-  width: 35px;
-  border: 2px solid var(--medium);
-  background-color: white;
-  display: block;
-  transition: 0.5s;
-  margin-top: 10px;
-  margin-bottom: 10px;
+width: 35px;
+border: 2px solid var(--medium);
+background-color: white;
+display: block;
+transition: 0.5s;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 .burger-button-index.active span{
-  border-color: var(--light);
-  background-color:white;
+border-color: var(--light);
+background-color:white;
 }
 
 .burger-button span{
-  width: 35px;
-  border: 2px solid var(--dark-text);
-  background-color: white;
-  display: block;
-  transition: 0.5s;
-  margin-top: 10px;
-  margin-bottom: 10px;
+width: 35px;
+border: 2px solid var(--dark-text);
+background-color: white;
+display: block;
+transition: 0.5s;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 .burger-button.active span{
-  border-color: var(--dark-text);
-  background-color:white;
+border-color: var(--dark-text);
+background-color:white;
 }
 
 .burger-top, .burger-bottom{
-  position: absolute;
+position: absolute;
 }
 
 .burger-top{
-  top: -02px;
+top: -02px;
 }
 
 .burger-bottom{
-  bottom: -02px;
+bottom: -02px;
 }
 /* make sure this has the same top as the burger button has padding*/
 .burger-button.active .burger-top{
-  position: absolute;
-  top: 8px;
-  transform: rotateZ(45deg);
+position: absolute;
+top: 8px;
+transform: rotateZ(45deg);
 }
 
 .burger-button.active .burger-middle{
 /*   transform: rotateZ(270deg); */
-  border-color: rgba(0,0,0,0);
-  background-color:rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+background-color:rgba(0,0,0,0);
 }
 
 /* make sure this has the same bottom as the burger button has padding*/
 
 .burger-button.active .burger-bottom{
-  position: absolute;
-  bottom: 8px;
-  transform: rotateZ(-45deg);
+position: absolute;
+bottom: 8px;
+transform: rotateZ(-45deg);
 }
 
 /* make sure this has the same top as the burger button has padding*/
 .burger-button-index.active .burger-top{
-  position: absolute;
-  top: 8px;
-  transform: rotateZ(45deg);
+position: absolute;
+top: 8px;
+transform: rotateZ(45deg);
 }
 
 .burger-button-index.active .burger-middle{
 /*   transform: rotateZ(270deg); */
-  border-color: rgba(0,0,0,0);
-  background-color:rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+background-color:rgba(0,0,0,0);
 }
 
 /* make sure this has the same bottom as the burger button has padding*/
 
 .burger-button-index.active .burger-bottom{
-  position: absolute;
-  bottom: 8px;
-  transform: rotateZ(-45deg);
+position: absolute;
+bottom: 8px;
+transform: rotateZ(-45deg);
 }
-  
-  
+
+
 .menu-button:hover {
-  font-style: italic;
+font-style: italic;
 }
 
 .menu-button.active:hover {
-  color: var(--dark-text)
+color: var(--dark-text)
 }
 
 .mobile-menu {
-  padding: 1rem;
-  text-align: center;
-  background-color: var(--featured);
-  border-radius: 50rem 50rem 0 0;
-  width: 10rem;
-  transition: 0.5s;
-  max-height: 100vh;
-  overflow: scroll;
-  padding-top: 3rem;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+padding: 1rem;
+text-align: center;
+background-color: var(--featured);
+border-radius: 50rem 50rem 0 0;
+width: 10rem;
 }
-
 
 .mobile-menu a {
-  display: block;
-  color: white;
-  padding: 0.2rem;
-
-.mobile-menu.active {
-  visibility: visible;
-  opacity: 1;
-  padding-top: 4.5rem;
-  transition: visibility 0s, opacity 0.5s linear;
-  visibility: visible;
-  opacity: 1;
-  padding-top: 4.5rem;
-  transition: all 0.8s;
-  background-color: var(--light);
-  padding: 2rem;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  color: white;
-  text-align: center;
-  transition: 0.5s;
-  max-height: 100vh;
-  overflow: scroll;
-  padding-top: 3rem;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s linear;
+display: block;
+color: white;
+padding: 0.2rem;
 }
 
-.mobile-menu.active {
-  transition: visibility 0.5s, opacity 0.5s linear;
-  visibility: visible;
-  opacity: 1;
-}
 
 
 
 
 .logo-mobile-menu {
-  text-align: left;
-  position: absolute;
-  top: 2rem;
-  max-width: 11rem;
-  left: 2rem;
+text-align: left;
+position: absolute;
+top: 2rem;
+max-width: 11rem;
+left: 2rem;
 }
-
-
-
-.mobile-menu a {
-  font-family: 'heimat-didone-10', sans-serif;
-  display: block;
-  padding: 0.8rem 1rem;
-  font-size: 2.3rem;
-  color: var(--dark-text);
-}
-
-.mobile-nav {
-  margin-top: 7rem;
-  text-align: left;
-  display: block
-}
-
 
 
 /* ------------ Contact Forms  ----------------------- */
 
 /* ------------ Form Styles  ----------------------- */
 select {
-  line-height: 1.8rem;
-  color: var(--dark-text);
-  font-size: 1.2rem;
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 2px solid var(--medium);
-  color: var(--dark-text);
-  background-color: white;
+line-height: 1.8rem;
+color: var(--dark-text);
+font-size: 1.2rem;
+width: 100%;
+display: block;
+margin-bottom: 1rem;
+padding: 0.5rem;
+font-family: inherit;
+font-size: 1rem;
+border: 2px solid var(--medium);
+color: var(--dark-text);
+background-color: white;
 }
 
 option {
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 2px solid var(--medium);
-  color: var(--dark-text);
-  background-color: white;
+width: 100%;
+display: block;
+margin-bottom: 1rem;
+padding: 0.5rem;
+font-family: inherit;
+font-size: 1rem;
+border: 2px solid var(--medium);
+color: var(--dark-text);
+background-color: white;
 }
 
 label {
-  line-height: 1.8rem;
-  color: var(--dark-text);
-  font-size: 1.2rem;
+line-height: 1.8rem;
+color: var(--dark-text);
+font-size: 1.2rem;
 }
 
 input, textarea {
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 2px solid var(--medium);
-  color: var(--dark-text);
-  background-color: white;
-  cursor: pointer;
+width: 100%;
+display: block;
+margin-bottom: 1rem;
+padding: 0.5rem;
+font-family: inherit;
+font-size: 1rem;
+border: 2px solid var(--medium);
+color: var(--dark-text);
+background-color: white;
+cursor: pointer;
 }
 
-           
+         
 input:focus,
 textarea:focus {
-  outline: none;
-  border: 2px solid var(--light);
+outline: none;
+border: 2px solid var(--light);
 }
 
 
 textarea {
-  height: 20vh;
+height: 20vh;
 }
 
 button {
-    font-size: 1.2rem;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid var(--medium);
-    text-align: center;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: 400;
-    font-family: 'Jost', sans-serif;
-    padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid var(--medium);
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: 'Jost', sans-serif;
+  padding: 0.5rem 1rem;
 }
 
 button:hover {
-  border: 1px solid var(--light);
+border: 1px solid var(--light);
 }
 
 /* ------------ Blogging elements  ----------------------- */
@@ -746,14 +692,14 @@ button:hover {
 /* Miscelaneous elements  */
 
 hr.short {
-  border: 1px solid var(--dark-text);
-  width: 2rem;
-  margin: 1rem 0;
+border: 1px solid var(--dark-text);
+width: 2rem;
+margin: 1rem 0;
 }
 
 hr.short.center {
-  margin:auto;
-  margin: 1rem auto;
+margin:auto;
+margin: 1rem auto;
 }
 
 
@@ -761,81 +707,81 @@ hr.short.center {
 
 
 #popup_box {
-  display: none; /* Hide the DIV */
-  position: fixed;
-  _position: absolute; /* hack for internet explorer 6 */
-  background: var(--featured);
-  color: white;
-  left: 400px;
-  top: 40%;
-  z-index: 100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
-  margin-left: 25px;
-  /* additional features, can be omitted */
-  padding: 5%;
-  font-size: 15px;
-  -moz-box-shadow: 0 0 5px;
-  -webkit-box-shadow: 0 0 5px;
-  box-shadow: 0 0 5px;
+display: none; /* Hide the DIV */
+position: fixed;
+_position: absolute; /* hack for internet explorer 6 */
+background: var(--featured);
+color: white;
+left: 400px;
+top: 40%;
+z-index: 100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+margin-left: 25px;
+/* additional features, can be omitted */
+padding: 5%;
+font-size: 15px;
+-moz-box-shadow: 0 0 5px;
+-webkit-box-shadow: 0 0 5px;
+box-shadow: 0 0 5px;
 }
 #container {
-  background: white; /*Sample*/
-  width: 100%;
-  height: 100%;
+background: white; /*Sample*/
+width: 100%;
+height: 100%;
 }
 a {
-  cursor: pointer;
-  text-decoration: none;
+cursor: pointer;
+text-decoration: none;
 }
 /* This is for the positioning of the Close Link */
 #popupBoxClose {
-  font-size: 20px;
-  line-height: 15px;
-  right: 5px;
-  top: 5px;
-  position: absolute;
-  font-weight: 500;
+font-size: 20px;
+line-height: 15px;
+right: 5px;
+top: 5px;
+position: absolute;
+font-weight: 500;
 }
 
 
 button {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 3px;
+background: #000;
+color: #fff;
+text-align: center;
+font-weight: bold;
+padding: 10px 30px;
+border-radius: 3px;
 }
 
 #overlay {
-  z-index: 1;
-  position: fixed;
-  height: 100%; 
-  width: 100%;
-  top: 0;
-  right: 0;  
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8);
-  display: none;
+z-index: 1;
+position: fixed;
+height: 100%; 
+width: 100%;
+top: 0;
+right: 0;  
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0.8);
+display: none;
 }
 
 #popup {
-  max-width: 600px;
-  width: 80%;
-  max-height: 300px;
-  height: 80%; 
-  padding: 20px;
-  position: relative;
-  background: #fff;
-  margin: 20px auto;
+max-width: 600px;
+width: 80%;
+max-height: 300px;
+height: 80%; 
+padding: 20px;
+position: relative;
+background: #fff;
+margin: 20px auto;
 }
 
 #close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #000;
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+color: #000;
 }
 
 
@@ -859,12 +805,12 @@ button {
 .show-xs, 
 .show-sm,
 .show-md {
-	display: none; 
+display: none; 
 }
 
 .inline { 
-  display: inline-block;
-  vertical-align: top;
+display: inline-block;
+vertical-align: top;
 }
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
@@ -872,24 +818,24 @@ button {
 
 @media(max-width:64em) {
 
-  .md-padded-1 { padding: 1rem; }
+.md-padded-1 { padding: 1rem; }
 
-	.show-md { display: block; }
-	.hide-md { display: none;  }
+.show-md { display: block; }
+.hide-md { display: none;  }
 
-  .angel {
-    position: absolute;
-    right: 8%;
-    bottom: -8rem;
-    max-width: 12rem;
-  }
+.angel {
+  position: absolute;
+  right: 8%;
+  bottom: -8rem;
+  max-width: 12rem;
+}
 
-  .logo { font-size: 2.5rem; }
+.logo { font-size: 2.5rem; }
 
-  .menu-bar a {
-    padding: 0.25rem 0.5rem;
-    font-size: 1.3rem;
-  }
+.menu-bar a {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.3rem;
+}
 
 }
 
@@ -899,53 +845,56 @@ button {
 
 @media(max-width:48em) {
 
-  .nav-item-emphasis {
-    margin-left: 1.3rem;
-    }
-
-	.show-sm { display: block; }
-	.hide-sm { display: none;  }
-
-  .sm-text-center { text-align: center; }
-  .sm-text-left   { text-align: left; }
-  .sm-text-right  { text-align: right; }
-
-  .sm-padded     { padding: 5%; }
-  .sm-padded-1   { padding: 1rem; }
-  .sm-padded-05  { padding: 0.5rem; }
-
-  .sm-padded-t-0 { padding-top: 0; }
-  .sm-padded-b-0 { padding-bottom: 0; }
-  .sm-margin-t-0 { margin-top: 0; }
-  .sm-margin-b-0 { margin-bottom: 0; }
-
-  .sm-landscape     { padding-bottom: 66% ; }
-  .sm-portrait-tall { padding-bottom: 175%; }
-  .sm-portrait      { padding-bottom: 125%; }
-  .sm-square        { padding-bottom: 100%; }
-
-  h1 {
-    font-size: 2rem;
-  }  
-
-  .width {
-    max-width: 8rem;
+.nav-item-emphasis {
+  margin-left: 1.3rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
-  }
+.show-sm { display: block; }
+.hide-sm { display: none;  }
 
-  .angel {
-    position: absolute;
-    right: 8%;
-    bottom: -5rem;
-    max-width: 8rem;
-  }
+.sm-center { text-align: center; }
+.sm-text-left   { text-align: left; }
+.sm-text-right  { text-align: right; }
 
-  .logo-mob-menu { color: var(--dark-text); }
+.sm-padded     { padding: 5%; }
+.sm-padded-1   { padding: 1rem; }
+.sm-padded-05  { padding: 0.5rem; }
 
-  .sm-padded-t-0 { padding-top: 0;}
+.sm-padded-t-0 { padding-top: 0; }
+.sm-padded-b-0 { padding-bottom: 0; }
+.sm-margin-t-0 { margin-top: 0; }
+.sm-margin-b-0 { margin-bottom: 0; }
+
+.sm-landscape     { padding-bottom: 66% ; }
+.sm-portrait-tall { padding-bottom: 175%; }
+.sm-portrait      { padding-bottom: 125%; }
+.sm-square        { padding-bottom: 100%; }
+
+h1 {
+  font-size: 2rem;
+}  
+
+.width {
+  max-width: 8rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.angel {
+  position: absolute;
+  right: 8%;
+  bottom: -5rem;
+  max-width: 8rem;
+}
+
+.logo-mob-menu { 
+  color: var(--dark-text);
+  font-size: 2.5rem;
+ }
+
+.sm-padded-t-0 { padding-top: 0;}
 
 }
 
@@ -954,47 +903,47 @@ button {
 
 @media(max-width:36em) {
 
-		.show-xs { display: block; }
-		.hide-xs { display: none;  }
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
 
-    .subtle-heading-xs {
-      font-weight: 300;
-      font-family: 'Martel', serif; 
-    }
-
-
-  h1 {
-    font-size: 2.5rem;
-  }  
-
-  h2 {
-    font-size: 1.5rem;
+  .subtle-heading-xs {
+    font-weight: 300;
+    font-family: 'Martel', serif; 
   }
 
-  .menu-bar {
-    padding: 2rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    display: block;
-  }
-  
-  .menu-bar a {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.3rem;
-    display: block;
-  }
 
-  .width { max-width: 7rem;}
+h1 {
+  font-size: 2.5rem;
+}  
 
-  .xs-margin-t-0 { margin-top: 0;}
-  .xs-padded-t-1 { padding-top: 1rem; }
-  .xs-padded-t-0 { padding-top: 0; }
+h2 {
+  font-size: 1.5rem;
+}
 
-  .angel {
-    position: absolute;
-    right: -2%;
-    bottom: -2rem;
-    max-width: 8rem;
-  }
+.menu-bar {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  display: block;
+}
+
+.menu-bar a {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.width { max-width: 7rem;}
+
+.xs-margin-t-0 { margin-top: 0;}
+.xs-padded-t-1 { padding-top: 1rem; }
+.xs-padded-t-0 { padding-top: 0; }
+
+.angel {
+  position: absolute;
+  right: -2%;
+  bottom: -2rem;
+  max-width: 8rem;
+}
 
 }

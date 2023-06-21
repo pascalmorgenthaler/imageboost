@@ -579,37 +579,33 @@ color: var(--dark-text)
 }
 
 .mobile-menu {
-  background-color: var(--v-light);
-  padding: 0 5% 5% 5%;
-  position: fixed; 
-  z-index: 1;
-  top: 0;
-  right: -100%;
-  left: 100vw;
-  bottom: 0;
+  padding: 0 1rem 1rem 1rem;
   color: white;
   text-align: left;
   transition: 0.5s;
   max-height: 100vh;
   overflow: scroll;
+  display: none;
 }
 
 .mobile-menu.active {
-  right: 0;
-  left: 20vw;
+  display:block; 
 }
 
 .mobile-menu a {
+  font-family: 'heimat-didone-10', serif;
+  font-size: 1.5rem;
 display: block;
-color: white;
+color: var(--dark-text);
 padding: 0.2rem;
+text-align: center;
 }
 
 
 .burger-button {
   position:fixed;
   top: 2vh;
-  right: 4vh;
+  right: 2vh;
   z-index: 9;
   padding: 8px;
   margin-top: 0.8rem;
@@ -633,7 +629,7 @@ padding: 0.2rem;
 
 .burger-button-index span{
   width: 35px;
-  border: 2px solid var(--medium);
+  border: 2px solid var(--dark-text);
   background-color: white;
   display: block;
   transition: 0.5s;
@@ -647,7 +643,7 @@ padding: 0.2rem;
 
 .burger-button span{
   width: 35px;
-  border: 2px solid var(--medium);
+  border: 2px solid var(--dark-text);
   background-color: white;
   display: block;
   transition: 0.5s;
@@ -655,7 +651,7 @@ padding: 0.2rem;
   margin-bottom: 10px;
 }
 .burger-button.active span{
-  border-color: var(--light);
+  border-color: var(--dark-text);
   background-color:white;
 }
 
@@ -983,6 +979,10 @@ h2 {
  }
 
 .sm-padded-t-0 { padding-top: 0;}
+.sm-no-padded { padding: 0;  }
+.sm-logo-padded { 
+  padding: 1.2rem 1.2rem 0.3rem 1.2rem;
+}
 
 }
 

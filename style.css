@@ -586,10 +586,17 @@ footer nav a {
   width: 10rem;
 }
 
+<<<<<<< HEAD
 .mobile-menu a {
   display: block;
   color: white;
   padding: 0.2rem;
+=======
+.mobile-menu.active {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 4.5rem;
+>>>>>>> parent of 3304bdf (Update style.css)
 }
 
 

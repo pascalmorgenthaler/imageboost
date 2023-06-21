@@ -102,8 +102,6 @@ html {
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
 
-.margin-t-3 { margin-top: 3rem; }
-
 .margin-t-0 { margin-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
@@ -210,13 +208,6 @@ h1 {
 
 .logo {
   font-size: 4.5rem;
-}
-
-.mob-logo {
-  position: absolute;
-  left: 1rem;
-  top: 1rem; 
-  font-size: 2.5rem; ;
 }
 
 .fa-solid { font-size: 4rem;}
@@ -380,7 +371,10 @@ nav a:hover {
   border: 1px solid var(--dark-text);
   margin-left: 1.3rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 26e5e4d (a)
 
 .flex-flip:nth-child(2n) {
   flex-flow:row-reverse wrap;
@@ -581,9 +575,19 @@ footer nav a {
 .mobile-menu {
   padding: 1rem;
   text-align: center;
+<<<<<<< HEAD
   background-color: var(--featured);
   border-radius: 50rem 50rem 0 0;
   width: 10rem;
+=======
+  transition: 0.5s;
+  max-height: 100vh;
+  overflow: scroll;
+  padding-top: 3rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+>>>>>>> parent of 26e5e4d (a)
 }
 
 <<<<<<< HEAD
@@ -593,10 +597,17 @@ footer nav a {
   padding: 0.2rem;
 =======
 .mobile-menu.active {
+<<<<<<< HEAD
   visibility: visible;
   opacity: 1;
   padding-top: 4.5rem;
 >>>>>>> parent of 3304bdf (Update style.css)
+=======
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 4.5rem;
+>>>>>>> parent of 26e5e4d (a)
 }
 
 
@@ -611,6 +622,23 @@ footer nav a {
   left: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+.mobile-menu a {
+  font-family: 'futura-pt', sans-serif;
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 2.3rem;
+  color: var(--dark-text);
+}
+
+.mobile-nav {
+  margin-top: 7rem;
+  text-align: left;
+  display: block
+}
+
+>>>>>>> parent of 26e5e4d (a)
 
 /* ------------ Contact Forms  ----------------------- */
 
@@ -896,10 +924,7 @@ button {
     max-width: 8rem;
   }
 
-  .logo-mob-menu { 
-    color: var(--dark-text);
-    font-size: 2.5rem;
-   }
+  .logo-mob-menu { color: var(--dark-text); }
 
   .sm-padded-t-0 { padding-top: 0;}
 
